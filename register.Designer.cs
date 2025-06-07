@@ -1,14 +1,14 @@
 ﻿namespace EmployeeMgmt1
 {
-    partial class Login
+    partial class Register
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,41 +23,26 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             TagBox = new Panel();
-            logo = new PictureBox();
-            email = new TextBox();
-            password = new TextBox();
-            button_login = new Button();
-            signup = new LinkLabel();
             checkpassword = new CheckBox();
-            panel1.SuspendLayout();
+            signin = new LinkLabel();
+            button_register = new Button();
+            password = new TextBox();
+            email = new TextBox();
+            logo = new PictureBox();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Teal;
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(TagBox);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(310, 419);
-            panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // label4
             // 
@@ -94,7 +79,6 @@
             label2.Size = new Size(58, 54);
             label2.TabIndex = 1;
             label2.Text = "C";
-            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -107,7 +91,6 @@
             label1.Size = new Size(63, 54);
             label1.TabIndex = 0;
             label1.Text = "M";
-            label1.Click += label1_Click;
             // 
             // TagBox
             // 
@@ -116,18 +99,54 @@
             TagBox.Name = "TagBox";
             TagBox.Size = new Size(73, 370);
             TagBox.TabIndex = 4;
-            TagBox.Paint += panel2_Paint;
             // 
-            // logo
+            // checkpassword
             // 
-            logo.BackColor = Color.Transparent;
-            logo.Image = Properties.Resources.mcmc;
-            logo.Location = new Point(465, 15);
-            logo.Name = "logo";
-            logo.Size = new Size(101, 101);
-            logo.TabIndex = 1;
-            logo.TabStop = false;
-            logo.Click += logo_Click;
+            checkpassword.AutoSize = true;
+            checkpassword.Location = new Point(407, 257);
+            checkpassword.Name = "checkpassword";
+            checkpassword.Size = new Size(108, 19);
+            checkpassword.TabIndex = 13;
+            checkpassword.Text = "Show Password";
+            checkpassword.UseVisualStyleBackColor = true;
+            // 
+            // signin
+            // 
+            signin.AutoSize = true;
+            signin.Font = new Font("Microsoft Sans Serif", 10F);
+            signin.ForeColor = Color.White;
+            signin.LinkColor = Color.Teal;
+            signin.Location = new Point(493, 347);
+            signin.Name = "signin";
+            signin.Size = new Size(51, 17);
+            signin.TabIndex = 12;
+            signin.TabStop = true;
+            signin.Text = "Sign In";
+            signin.LinkClicked += signin_LinkClicked;
+            // 
+            // button_register
+            // 
+            button_register.BackColor = Color.Teal;
+            button_register.Cursor = Cursors.Hand;
+            button_register.FlatStyle = FlatStyle.Popup;
+            button_register.Font = new Font("Microsoft Sans Serif", 10F);
+            button_register.ForeColor = Color.White;
+            button_register.Location = new Point(404, 280);
+            button_register.Name = "button_register";
+            button_register.Size = new Size(234, 42);
+            button_register.TabIndex = 11;
+            button_register.Text = "Register";
+            button_register.UseVisualStyleBackColor = false;
+            button_register.Click += button_register_Click;
+            // 
+            // password
+            // 
+            password.Location = new Point(404, 214);
+            password.Multiline = true;
+            password.Name = "password";
+            password.PlaceholderText = "Password";
+            password.Size = new Size(234, 35);
+            password.TabIndex = 10;
             // 
             // email
             // 
@@ -137,99 +156,70 @@
             email.Name = "email";
             email.PlaceholderText = "Email";
             email.Size = new Size(234, 35);
-            email.TabIndex = 2;
+            email.TabIndex = 9;
             email.TextChanged += email_TextChanged;
             // 
-            // password
+            // logo
             // 
-            password.Location = new Point(404, 214);
-            password.Multiline = true;
-            password.Name = "password";
-            password.PlaceholderText = "Password";
-            password.Size = new Size(234, 35);
-            password.TabIndex = 3;
-            password.TextChanged += password_TextChanged;
+            logo.BackColor = Color.Transparent;
+            logo.Image = Properties.Resources.mcmc;
+            logo.Location = new Point(465, 15);
+            logo.Name = "logo";
+            logo.Size = new Size(101, 101);
+            logo.TabIndex = 8;
+            logo.TabStop = false;
             // 
-            // button_login
+            // panel1
             // 
-            button_login.BackColor = Color.Teal;
-            button_login.Cursor = Cursors.Hand;
-            button_login.FlatStyle = FlatStyle.Popup;
-            button_login.Font = new Font("Microsoft Sans Serif", 10F);
-            button_login.ForeColor = Color.White;
-            button_login.Location = new Point(404, 280);
-            button_login.Name = "button_login";
-            button_login.Size = new Size(234, 42);
-            button_login.TabIndex = 4;
-            button_login.Text = "Login";
-            button_login.UseVisualStyleBackColor = false;
-            button_login.Click += button_login_Click;
+            panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(TagBox);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(310, 419);
+            panel1.TabIndex = 7;
             // 
-            // signup
+            // Register
             // 
-            signup.AutoSize = true;
-            signup.Font = new Font("Microsoft Sans Serif", 10F);
-            signup.ForeColor = Color.White;
-            signup.LinkColor = Color.Teal;
-            signup.Location = new Point(493, 347);
-            signup.Name = "signup";
-            signup.Size = new Size(58, 17);
-            signup.TabIndex = 5;
-            signup.TabStop = true;
-            signup.Text = "Sign Up";
-            signup.LinkClicked += signup_LinkClicked;
-            // 
-            // checkpassword
-            // 
-            checkpassword.AutoSize = true;
-            checkpassword.Location = new Point(407, 257);
-            checkpassword.Name = "checkpassword";
-            checkpassword.Size = new Size(102, 17);
-            checkpassword.TabIndex = 6;
-            checkpassword.Text = "Show Password";
-            checkpassword.UseVisualStyleBackColor = true;
-            checkpassword.CheckedChanged += checkpassword_CheckedChanged;
-            // 
-            // login
-            // 
-            AutoScaleDimensions = new SizeF(6F, 13F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(742, 419);
             Controls.Add(checkpassword);
-            Controls.Add(signup);
-            Controls.Add(button_login);
+            Controls.Add(signin);
+            Controls.Add(button_register);
             Controls.Add(password);
             Controls.Add(email);
             Controls.Add(logo);
             Controls.Add(panel1);
-            Font = new Font("Microsoft Sans Serif", 8.25F);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "login";
-            RightToLeft = RightToLeft.No;
+            Name = "Register";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Sign In";
-            Load += login_Load;
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Panel panel1;
-        private PictureBox logo;
-        private TextBox email;
-        private TextBox password;
-        private Button button_login;
-        private Label label1;
-        private Label label2;
         private Label label4;
         private Label label3;
+        private Label label2;
+        private Label label1;
         private Panel TagBox;
-        private LinkLabel signup;
         private CheckBox checkpassword;
+        private LinkLabel signin;
+        private Button button_register;
+        private TextBox password;
+        private TextBox email;
+        private PictureBox logo;
+        private Panel panel1;
     }
 }
